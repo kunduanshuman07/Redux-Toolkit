@@ -1,10 +1,12 @@
 import React from 'react'
-
+import Navbar from "./components/Navbar";
+import CartContainer from './components/CartContainer';
 const App = () => {
   return (
-    <div>
-      
-    </div>
+    <main>
+      <Navbar/>
+      <CartContainer/>
+    </main>
   )
 }
 
