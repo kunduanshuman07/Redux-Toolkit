@@ -50,3 +50,24 @@
             return number_of_cakes: state.number_of_cakes - 1;
         }
     }
+
+##### Actions
+
+1. Plain javascript objects
+2. The only way to interact with the store is via actions
+3. They carry information about what transaction needs to be performed
+4. They have a type property which defines the type of action being performed
+5. The type property are string constants
+
+##### Reducers
+
+1. Specifies how the state of the application changes when an action is triggered
+2. It is a function which takes state and action as arguments and returns the next state of the application
+3. (prevState, action) => nextState
+
+##### Store
+
+1. Holds the state of an application
+2. Allows access of states via **getState()**
+3. Allows state to be updated via **dispatch(action)**
+4. Register/unregister event listeners using **subscribe(listener)** -> this is triggered after every action dispatch and state change
